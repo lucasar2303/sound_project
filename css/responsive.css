@@ -1,0 +1,50 @@
+
+
+@media (max-width: 500px){
+    main{
+        background-color: #fff;
+        width: 100%;
+    }
+    .content{
+        box-shadow: none;
+        width: 100%;
+    }
+    .imgSelected{
+        width: 70%;
+        height: 70%;
+    }
+
+    .musicTime{
+        width: 70%;
+    }
+    .div-volumeControls{
+        width: 70%;
+        padding: 0%;
+    }
+
+    #volumeControl{
+        background-color: #000;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #mute{
+        color: #000;
+    }
+    #volumeControl::-webkit-slider-thumb{
+        background:#000;
+    }
+    
+    #volumeControl::-moz-range-thumb{
+        background: #000;
+    }
+    
+    #volumeControl::-ms-range-thumb{
+        background: #000;
+    }
+    
+    .gg-volume{
+        color: #000;
+    }
+    
+}

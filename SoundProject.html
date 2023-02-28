@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Sound Project - Anastácio Ribeiro</title>
+</head>
+<body style="background-image: url(./img/billieEilish.jpg);">
+    <main>
+        <div class="content">
+                <img src="./img/billieEilish.jpg" class="imgSelected">
+            
+                <h2 class="musicTitle">Billie Eilish: Happier Than Ever</h2>
+                <div class="player">
+                    <button class="previous"> </button>
+                    <button class="play" id="play" onclick="play()"> </button>
+                    <button class="pause" id="pause" onclick="pause()"> </button>
+                    <button class="next"></button>
+                </div>
+                <div class="musicTime">
+                    <div class="barra">
+                       <!-- <progress value="0" max="1"></progress>
+                        <div class="ponto"></div>-->
+
+                        <input type="range" value="0" min="0" max="100" id="progressBar">
+                    </div>
+
+                    
+                    <p class="pMusicTime">0:00</p>
+                </div>
+               
+
+                
+            
+        </div>
+        <div class="div-volumeControls">
+            
+            <i class="bi bi-volume-mute-fill" id="mute"></i>
+            <input type="range" min="0" max="50" id="volumeControl">
+        </div>
+        
+    </main>
+    
+    <audio id="music"  src="./music/Billie Eilish - Happier Than Ever.mp3"></audio>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
